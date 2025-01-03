@@ -15,11 +15,8 @@ def mul(a, b):
     return f"{a} * {b} = {answer}"
 
 def div(a, b):
-    if b != 0:
-        answer = a / b
-        return f"{a} / {b} = {answer}"
-    else:
-        return "Cannot divide by zero."
+    answer = a / b
+    return f"{a} / {b} = {answer}"
 
 @app.route("/", methods=["GET", "POST"])
 def calculator():
